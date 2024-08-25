@@ -1,0 +1,18 @@
+[package]
+name = "grpc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.39", features = ["full"] }
+tokio-stream = "0.1.14"
+tonic = "0.12"
+prost = "0.13"
+serde = { version = "1.0.208", features = ["derive"] }
+axum = "0.7"
+tower = "0.5.0"
+futures = "0.3"
+
+[build-dependencies]
+prost-build = "0.13.1"
+tonic-build = "0.12.1"
